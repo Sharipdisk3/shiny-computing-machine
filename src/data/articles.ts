@@ -28,7 +28,7 @@ export const articles: Article[] = [
     ],
     date: "2026-09-14",
     category: "kazakhstan",
-    image: "/musk-nvidia-orbit-14.jpg",
+    image: "/нова.png",
   },
   {
     id: "72",
