@@ -22,7 +22,7 @@ export const articles: Article[] = [
       "В этом сезоне в Technovation Girls участвовали более 12 тысяч девушек из 130 стран. В мировой финал прошли 15 команд. Asian Sharks стала первой казахстанской командой в финале старшей категории за восемь лет. Финал конкурса пройдёт в индийском Бенгалуру."
     ],
     date: "2026-09-14",
-    category: "kazakhstan",
+    category: "world",
     image: "/nova.png",
   },
   {
@@ -59,3 +59,11 @@ export const articles: Article[] = [
     image: "/lg-exaone-14.webp",
   }
 ];
+
+export function getArticleById(id: string): Article | undefined {
+  return articles.find((article) => article.id === id);
+}
+
+export function getArticlesByCategory(categoryId: CategoryId): Article[] {
+  return articles.filter((article) => article.category === categoryId);
+}
